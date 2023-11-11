@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: darkgrey;
+        }
+        .welcome-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10px;
+        }
+
+        .welcome-content {
+            background-color: transparent;
+            padding: 20px;
+            border-radius: 10px;
+            width: 39%;
+        }
+
+        .btn-go-to-main {
+            font-size: 15px;
+            font-weight: bold;
+            background-color: #3e4144f1;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 20px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn-go-to-main:hover {
+            background-color: #2773c4;
+        }
+
+        .profile-picture {
+            width: 50;
+            text-align: right;
+            margin-right: 15%;
+            margin-top: 8%;
+
+
+        }
+        .profile-picture img {
+            width: 100%;
+            height: 350px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+
+        }
+
+        @media (max-width: 768px) {
+            .welcome-content {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Emerson P. Enriquez</a>
+</nav>
+<section class="welcome-section">
+    <div class="welcome-content">
+        <h1>Hi! I'm Emerson</h1>
+        <p>Click the button below to know me more</p>
+        <a href="index1.html" class="btn-go-to-main">Go to My Profile</a>
+    </div>
+    <div class="profile-picture">
+        <img src="emerson.jpg" alt="Profile Picture">
+    </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

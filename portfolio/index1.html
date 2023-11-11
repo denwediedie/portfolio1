@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        
+        body {
+            background-color: #f8f9fa; 
+            font-family: Arial, sans-serif; 
+            width: 100%;
+        }
+    
+        
+        .navbar {
+            background-color: #ffffff; 
+        }
+    
+        .navbar-brand {
+            font-size: 24px; 
+        }
+    
+        .nav-link {
+            font-size: 20px; 
+            color: hwb(169 92% 4% / 0.192);
+            transition: color 0.3s;
+        }
+    
+        .nav-link:hover {
+            color: #007bff;
+        }
+    
+        
+        #profile {
+            background-color: #ffffff; 
+            padding: 60px 0;
+    
+        }
+    
+        .profile-image {
+            width: 50%; 
+            border: 6px solid #1c1c1d;
+            cursor: pointer;
+            transition: transform 0.5s;
+        }
+
+        .profile-image:hover {
+            transform: rotateY(180deg);
+        }
+    
+        .profile-description {
+            font-size: 18px;
+            
+        }
+    
+       
+        #about {
+            background-color: #f8f9fa;
+            padding: 60px 0;
+            
+        }
+    
+        
+        #contact {
+            background-color: #ffffff; 
+            padding: 60px 0;
+    
+        }
+   
+        .social-icon {
+            width: 20%;
+            padding: 5px;
+            align-items: center;
+
+        }
+       
+
+        
+        .social-icon:hover {
+            transform: scale(1.2); 
+        }
+    
+        
+        #achievements {
+            background-color: #f8f9fa; 
+            padding: 60px 0;
+        
+        }
+    
+        .accordion {
+            margin-top: 20px;
+        }
+    
+        .card-header {
+            background-color: #f8f9fa; 
+            border: none;
+        }
+    
+        .btn-link {
+            color: #333;
+            font-weight: bold; 
+        }
+    
+        .btn-link:hover {
+            color: #007bff; 
+        }
+    </style>
+    
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Emerson P. Enriquez</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <a class="nav-link" href="#profile">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contacts</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#achievements">Achievements/Hobbies</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="profile" class="py-5">
+        <div class="container">
+            <h1 class="display-4">Profile</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="emerson.jpg" alt="Your Profile Image" class="img-fluid rounded-circle profile-image">
+                </div>
+                <div class="col-md-8">
+                    <p>
+                       <h1>Hi! I'm Emerson Enriquez</h1>
+                        <br> a simple man who lives in Barangay Bagong Pag-asa San Miguel Bulacan,<br>
+                  <br>and i have a three sisters, and one brother.<br> </p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-5">
+        <div class="container">
+            <h1 class="display-4">About me</h1>
+            <p><br> Birthday: September 14, 2002 <br>
+                <br>Age:21<br>
+                <br>Mother: Cristina Enriquez<br>
+                <br>Father: Elmer Enriquez<br></p>
+        </div>
+    </section>
+
+    
+    
+<section id="contact" class="py-5">
+    <div class="container">
+        <h1 class="display-4">Contacts</h1>
+        <div class="row">
+            <div class="col-md-6">
+            </div>
+            <div class="col-md-6">
+               
+                <a href="https://www.tiktok.com%2F%40emersonenriquezz" target="_blank">
+                      <img src="tiktok.png" alt="Tiktok" class="social-icon"></a>
+                <a href="https://www.facebook.com/prettyboiemerson" target="_blank">
+                   <img src="facebook.png" alt="Facebook" class="social-icon">
+                </a>
+                <a href="https://www.instagram.com/emersorizz/" target="_blank">
+                    <img src="instagram.png" alt="Instagram" class="social-icon">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    
+    <section id="achievements" class="py-5">
+        <div class="container">
+            <h1 class="display-4">Achievements/Hobbies</h1>
+            <div class="accordion" id="achievementsAccordion">
+                
+                <div class="card">
+                    <div class="card-header" id="achievementItem">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseAchievement1" aria-expanded="true" aria-controls="collapseAchievement1">
+                                Achievement 
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseAchievement1" class="collapse show" aria-labelledby="achievements" data-parent="#achievementsAccordion">
+                        <div class="card-body">
+                            <p>• Four times Table tennis Champion in Municipal Meet</p>
+                                
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card">
+                    <div class="card-header" id="achievementItem2">
+                        <h2 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseHobbies" aria-expanded="false" aria-controls="collapseHobbies">
+                                Hobbies
+                            </button>
+                        </h2>
+                    </div>
+                    <div id="collapseHobbies" class="collapse" aria-labelledby="hobbies" data-parent="#achievementsAccordion">
+                        <div class="card-body">
+                            <p><br>• Playing Basketball <br>
+                                <br>• Playing table tennis<br>
+                                <br>• Watching Kdrama series<br></p>
+                            
+                        </div>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
